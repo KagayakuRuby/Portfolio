@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="activity-bar">
+        <svg class="activity-icon active" viewBox="0 0 24 24">
+            <path d="M2 6v14.01c0 .55.45.99.99.99H21a.99.99 0 00.99-.99V3.99A.99.99 0 0021 3H9.02c-.54 0-1.05.21-1.42.59L2 9.02V6zm5.5-4.5l-1 1h-2l1-1h2zm-1 2l-1 1h-2l1-1h2zm-1 2l-1 1h-2l1-1h2z"/>
+        </svg>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar-header">Explorer</div>
+        <nav class="sidebar-nav">
+            <a data-target="about" class="active">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                About.cs
+            </a>
+            <a data-target="skills">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                Skills.cs
+            </a>
+            <a data-target="projects">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                Projects.cs
+            </a>
+        </nav>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="tab-bar">
+            <div id="tab-about" class="tab active">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                About.cs
+                <span class="close-icon">&times;</span>
+            </div>
+            <div id="tab-skills" class="tab">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                Skills.cs
+                <span class="close-icon">&times;</span>
+            </div>
+            <div id="tab-projects" class="tab">
+                <svg class="file-icon" viewBox="0 0 24 24"><path d="M18.5 4.5l-3.5-3.5v3.5h3.5zm-1.5 1.5h-11c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-9.5l-5.5-5.5zm-5.17 12.67l-2.83-2.83 1.18-1.18 1.65 1.65 3.82-3.82 1.18 1.18-5 5z"/></svg>
+                Projects.cs
+                <span class="close-icon">&times;</span>
+            </div>
+        </div>
+        <main class="main-content">
+            <section id="content-about" class="content-section active">
+                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">AboutMe</span>
+<span class="line-number">2</span> {
+<span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Name</span> { <span class="keyword">get</span>; } = <span class="string">"Mohsen Rostampour"</span>;
+<span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Role</span> { <span class="keyword">get</span>; } = <span class="string">"Full-Stack Developer"</span>;
+<span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Location</span> { <span class="keyword">get</span>; } = <span class="string">"Tehran"</span>;
+<span class="line-number">6</span> 
+<span class="line-number">7</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="method">GetContact</span>()
+<span class="line-number">8</span>     {
+<span class="line-number">9</span>         <span class="keyword">return</span> <span class="string">"mrpsk.contact@proton.me"</span>;
+<span class="line-number">10</span>     }
+<span class="line-number">11</span> }</code></pre>
+            </section>
+
+            <section id="content-skills" class="content-section">
+                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MySkills</span>
+<span class="line-number">2</span> {
+<span class="line-number">3</span>     <span class="comment">// Languages & Frameworks</span>
+<span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Languages</span> => <span class="keyword">new</span>[]  <span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Ruby"</span>, <span class="string">"T-SQL"</span>, <span class="string">"HTML"</span>, <span class="string">"CSS"</span>};
+<span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Frameworks</span> => <span class="keyword">new</span>[] { <span class="string">"Django"</span>, <span class="string">"ASP.NET Core"</span>, <span class="string">"Ruby on Rails"</span> };
+<span class="line-number">6</span> 
+<span class="line-number">7</span>     <span class="comment">// Tools & Platforms</span>
+<span class="line-number">8</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Tools</span> => <span class="keyword">new</span>[] { <span class="string">"Git & GitHub"</span>, <span class="string">"Docker"</span>, <span class="string">"Azure"</span>};
+<span class="line-number">9</span> }</code></pre>
+            </section>
+
+            <section id="content-projects" class="content-section">
+                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MyProjects</span>
+<span class="line-number">2</span> {
+<span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">void</span> <span class="method">Showcase</span>()
+<span class="line-number">4</span>     {
+<span class="line-number">5</span>         <span class="comment">// A selection of my work</span>
+<span class="line-number">6</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Website : Launched and in progress: <a class='link' href='https://rmr.ir/' target='_blank'>On Web</a>"</span>);
+<span class="line-number">7</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Linux : Creating a final archive of all the information: <a class='link' href='https://github.com/KagayakuRuby/Linux---Creating-a-final-archive-of-all-the-information' target='_blank'>View on GitHub</a>"</span>);
+<span class="line-number">8</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Sql Injection tutorial: <a class='link' href='https://github.com/KagayakuRuby/sqlmap-switches' target='_blank'>View on GitHub</a>"</span>);
+<span class="line-number">9</span>         Console.<span class="method">WriteLine</span>(<span class="string">"nmap switches tutorial: <a class='link' href='https://github.com/KagayakuRuby/Nmap-Switches' target='_blank'>View on GitHub</a>"</span>);
+<span class="line-number">10</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Python : CLI online shop <a class='link' href='https://github.com/KagayakuRuby/Python-CLI-Online-Shop' target='_blank'>View on GitHub</a>"</span>);
+
+
+<span class="line-number">11</span>     }
+<span class="line-number">12</span> }</code></pre>
+            </section>
+        </main>
+        <div class="status-bar">
+            main | UTF-8 | C#
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.sidebar-nav a');
+            const contentSections = document.querySelectorAll('.content-section');
+            const tabs = document.querySelectorAll('.tab');
+
+            function switchTab(targetId) {
+                // Update nav links active state
+                navLinks.forEach(nav => {
+                    nav.classList.toggle('active', nav.getAttribute('data-target') === targetId);
+                });
+
+                // Update tabs active state
+                tabs.forEach(tab => {
+                    tab.classList.toggle('active', tab.id === `tab-${targetId}`);
+                });
+
+                // Update content sections active state
+                contentSections.forEach(section => {
+                    section.classList.toggle('active', section.id === `content-${targetId}`);
+                });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('data-target');
+                    switchTab(targetId);
+                });
+            });
+
+            tabs.forEach(tab => {
+                // Add click event to the tab itself (excluding the close icon)
+                tab.addEventListener('click', function(e) {
+                    if (e.target.classList.contains('close-icon')) return;
+                    const targetId = this.id.replace('tab-', '');
+                    switchTab(targetId);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
