@@ -54,44 +54,56 @@
         </div>
         <main class="main-content">
             <section id="content-about" class="content-section active">
-                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">AboutMe</span>
-<span class="line-number">2</span> {
-<span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Name</span> { <span class="keyword">get</span>; } = <span class="string">"Mohsen Rostampour"</span>;
-<span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Role</span> { <span class="keyword">get</span>; } = <span class="string">"Full-Stack Developer"</span>;
-<span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Location</span> { <span class="keyword">get</span>; } = <span class="string">"Tehran"</span>;
-<span class="line-number">6</span> 
-<span class="line-number">7</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="method">GetContact</span>()
-<span class="line-number">8</span>     {
-<span class="line-number">9</span>         <span class="keyword">return</span> <span class="string">"mrpsk.contact@proton.me"</span>;
-<span class="line-number">10</span>     }
-<span class="line-number">11</span> }</code></pre>
+                <pre>
+                    <code>
+                        <span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">AboutMe</span>
+                        <span class="line-number">2</span> {
+                        <span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Name</span> { <span class="keyword">get</span>; } = <span class="string">"Mohsen Rostampour"</span>;
+                        <span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Role</span> { <span class="keyword">get</span>; } = <span class="string">"Full-Stack Developer"</span>;
+                        <span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="property">Location</span> { <span class="keyword">get</span>; } = <span class="string">"Tehran"</span>;
+                        <span class="line-number">6</span> 
+                        <span class="line-number">7</span>     <span class="keyword">public</span> <span class="keyword">string</span> <span class="method">GetContact</span>()
+                        <span class="line-number">8</span>     {
+                        <span class="line-number">9</span>         <span class="keyword">return</span> <span class="string">"mrpsk.contact@proton.me"</span>;
+                        <span class="line-number">10</span>     }
+                        <span class="line-number">11</span> }
+                    </code>
+                </pre>
             </section>
 
             <section id="content-skills" class="content-section">
-                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MySkills</span>
-<span class="line-number">2</span> {
-<span class="line-number">3</span>     <span class="comment">// Languages & Frameworks</span>
-<span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Languages</span> => <span class="keyword">new</span>[]  <span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Ruby"</span>, <span class="string">"T-SQL"</span>, <span class="string">"HTML"</span>, <span class="string">"CSS"</span>};
-<span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Frameworks</span> => <span class="keyword">new</span>[] { <span class="string">"Django"</span>, <span class="string">"ASP.NET Core"</span>, <span class="string">"Ruby on Rails"</span> };
-<span class="line-number">6</span> 
-<span class="line-number">7</span>     <span class="comment">// Tools & Platforms</span>
-<span class="line-number">8</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Tools</span> => <span class="keyword">new</span>[] { <span class="string">"Git & GitHub"</span>, <span class="string">"Docker"</span>, <span class="string">"Azure"</span>};
-<span class="line-number">9</span> }</code></pre>
+                <pre>
+                    <code>
+                        <span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MySkills</span>
+                        <span class="line-number">2</span> {
+                        <span class="line-number">3</span>     <span class="comment">// Languages & Frameworks</span>
+                        <span class="line-number">4</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Languages</span> => <span class="keyword">new</span>[]  <span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"JavaScript"</span>, <span class="string">"Ruby"</span>, <span class="string">"T-SQL"</span>, <span class="string">"HTML"</span>, <span class="string">"CSS"</span>};
+                        <span class="line-number">5</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Frameworks</span> => <span class="keyword">new</span>[] { <span class="string">"Django"</span>, <span class="string">"ASP.NET Core"</span>, <span class="string">"Ruby on Rails"</span> };
+                        <span class="line-number">6</span> 
+                        <span class="line-number">7</span>     <span class="comment">// Tools & Platforms</span>
+                        <span class="line-number">8</span>     <span class="keyword">public</span> <span class="keyword">string</span>[] <span class="property">Tools</span> => <span class="keyword">new</span>[] { <span class="string">"Git & GitHub"</span>, <span class="string">"Docker"</span>, <span class="string">"Azure"</span>};
+                        <span class="line-number">9</span> }
+                    </code>
+                 </pre>
             </section>
 
             <section id="content-projects" class="content-section">
-                <pre><code><span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MyProjects</span>
-<span class="line-number">2</span> {
-<span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">void</span> <span class="method">Showcase</span>()
-<span class="line-number">4</span>     {
-<span class="line-number">5</span>         <span class="comment">// A selection of my work</span>
-<span class="line-number">6</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Website : Launched and in progress: <a class='link' href='https://rmr.ir/' target='_blank'>On Web</a>"</span>);
-<span class="line-number">7</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Linux : Creating a final archive of all the information: <a class='link' href='https://github.com/KagayakuRuby/Linux---Creating-a-final-archive-of-all-the-information' target='_blank'>View on GitHub</a>"</span>);
-<span class="line-number">8</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Sql Injection tutorial: <a class='link' href='https://github.com/KagayakuRuby/sqlmap-switches' target='_blank'>View on GitHub</a>"</span>);
-<span class="line-number">9</span>         Console.<span class="method">WriteLine</span>(<span class="string">"nmap switches tutorial: <a class='link' href='https://github.com/KagayakuRuby/Nmap-Switches' target='_blank'>View on GitHub</a>"</span>);
-<span class="line-number">10</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Python : CLI online shop <a class='link' href='https://github.com/KagayakuRuby/Python-CLI-Online-Shop' target='_blank'>View on GitHub</a>"</span>);
-<span class="line-number">11</span>     }
-<span class="line-number">12</span> }</code></pre>
+            <pre>
+                <code>
+                    <span class="line-number">1</span> <span class="keyword">public</span> <span class="keyword">class</span> <span class="class-name">MyProjects</span>
+                    <span class="line-number">2</span> {
+                    <span class="line-number">3</span>     <span class="keyword">public</span> <span class="keyword">void</span> <span class="method">Showcase</span>()
+                    <span class="line-number">4</span>     {
+                    <span class="line-number">5</span>         <span class="comment">// A selection of my work</span>
+                    <span class="line-number">6</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Website : Launched and in progress: <a class='link' href='https://rmr.ir/' target='_blank'>On Web</a>"</span>);
+                    <span class="line-number">7</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Linux : Creating a final archive of all the information: <a class='link' href='https://github.com/KagayakuRuby/Linux---Creating-a-final-archive-of-all-the-information' target='_blank'>View on GitHub</a>"</span>);
+                    <span class="line-number">8</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Sql Injection tutorial: <a class='link' href='https://github.com/KagayakuRuby/sqlmap-switches' target='_blank'>View on GitHub</a>"</span>);
+                    <span class="line-number">9</span>         Console.<span class="method">WriteLine</span>(<span class="string">"nmap switches tutorial: <a class='link' href='https://github.com/KagayakuRuby/Nmap-Switches' target='_blank'>View on GitHub</a>"</span>);
+                    <span class="line-number">10</span>         Console.<span class="method">WriteLine</span>(<span class="string">"Python : CLI online shop <a class='link' href='https://github.com/KagayakuRuby/Python-CLI-Online-Shop' target='_blank'>View on GitHub</a>"</span>);
+                    <span class="line-number">11</span>     }
+                    <span class="line-number">12</span> }
+                </code>
+             </pre>
             </section>
         </main>
         <div class="status-bar">
